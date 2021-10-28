@@ -1,0 +1,125 @@
+<Style >
+
+/* Código de página UTF-8 / PT-BR */
+.html { @charset 'UTF-8'; lang: 'pt-br'; width: '100%; }
+    
+   /* CSS / MENU NAVBAR */
+   /* CSS / Cores padrão 
+   color: #ffab62 = laranja medio 
+   color: #f4511e = laranja escuro 
+   color: #9F00FF = violeta médio royal 
+   color: #6351ce = violeta
+   color: #8B0000 = vermelho escuro
+   color: #c71585 = rosa médio royal 		 
+   color: #fffddd = amarelo claro 
+   color: #ffffff = branco escuro 
+   color: #005aff = azul royal 
+   color: #4CAF50 = verde 
+   color: #90EE90 = verde claro
+   color: #D6EFFF = azul muito claro 
+   color: #e3f2fd = azul muito claro 
+   color: #C6E9FF = azul claro 	
+   color: #6D6D6D = cinza escuro 
+   color: #474A51 = cinza muito escuro 
+   color: #f0f0f0 = azul muito claro quase branco 
+   */
+
+
+    /*  Menu Boostrap Navbar  */
+    /*  Navbars vem com suporte integrado para um punhado de sub-componentes. 
+	    Escolha entre os seguintes, sempre que precisar:
+        .navbar-brand para o nome de seu projeto, produto ou companhia;
+        .navbar-nav para obter uma leve navegação com suporte a dropdowns;
+        .navbar-toggler para usar com nosso plugin collapse e outros comportamentos;
+        .form-inline para qualquer campo de formulário e ações;
+        .navbar-text para adicionar texto centralizado verticalmente;
+        .collapse .navbar-collapse para agrupar e esconder conteúdos navbar, 
+		 de acordo com o breakpoint do pai. */
+
+
+    /*	Navbars precisam de um .navbar com .navbar-expand{-sm|-md|-lg|-xl} (para responsividade) 
+		e classes do esquema de cores;
+		Navbars são responsivas por default. Garanta acessibilidade com o elemento (nav) ou, se estiver 
+		usando um elemento mais genérico como (div), coloque (role="navigation") em cada navbar para 
+		identificá-lo como tal, em tecnologias assistivas. */
+
+
+    @media (min-width: 480px) { .rounded-sm-1 { border-radius: .1rem; } }  /* mobile 480px */
+
+    @media (min-width: 768px) { .rounded-md-2 { border-radius: .2rem; } }  /* tablet 768px */
+
+    @media (min-width: 992px) { .rounded-lg-3 { border-radius: .3rem; } }  /* notebook 992px */
+
+    @media (min-width: 2048px) { .rounded-xg-4 { border-radius: .4rem;} }  /* computer 2048px */
+
+    /* Style / Bootstrap / Menu Vertical = Navbar Default  */
+	/* Style / Bootstrap / Menu Horizontal = Navbar Expand  */        
+		
+    /* Horizontal Navigation Bar / Fixed Navigation Bar */
+    .navbar { top: 0; list-style-type: none; margin: 0; padding: 0; overflow-x: hidden; 
+              position:relative; border: 1px solid #e7e7e7; line-height: normal; 
+              letter-spacing: 3px; word-spacing: 6px; text-align: center; margin-bottom: 20px;}
+                        
+    ul li { float: left; }
+    ul li a { display: inline-block; color: #666; text-align: center; padding: 14px 16px; text-decoration: none; }
+    
+    /* Change the link color to #111 (black) on hover */
+    ul li a:hover { background-color: #111; }
+        
+    /* Active/Current Navigation Link */
+    .active { background-color: #4CAF59; }
+    
+    /* Add a gray right border to all list items, except the last item (last-child) */
+    ul li { border-right: 1px solid #bbb; }
+    ul li:last-child { border-right: none; }
+    /* Fim Horizontal Navigation Bar */
+	
+    /* Generate series of `.navbar-expand-*` responsive classes for configuring
+    /* where your navbar collapses. */
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    // stylelint-disable-next-line scss/selector-no-union-class-name
+    &#{$infix} {
+      @include media-breakpoint-up($next) {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        .navbar-nav {
+          flex-direction: row;
+
+          .dropdown-menu {
+            position: absolute;
+          }
+
+          .nav-link {
+            padding-right: $navbar-nav-link-padding-x;
+            padding-left: $navbar-nav-link-padding-x;
+          }
+        }
+
+        .navbar-nav-scroll {
+          overflow: visible;
+        }
+
+        .navbar-collapse {
+          display: flex !important; // stylelint-disable-line declaration-no-important
+          flex-basis: auto;
+        }
+
+        .navbar-toggler {
+          display: none;
+        }
+      }
+    }
+  }
+}
+							
+    /* Fim do #menu */
+
+	
+/** Fim do CSS */	
+
+</style>
