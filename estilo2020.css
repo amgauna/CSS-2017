@@ -15,11 +15,9 @@
     /* color: #D6EFFF = azul muito claro = #e3f2fd
     /* color: #C6E9FF = azul claro 	
     /* color: #6D6D6D = cinza escuro / #474A51 (cinza muito escuro) */
-
 		
      /* Código de página UTF-8 / PT-BR */
-	@charset 'UTF-8'; @language 'pt-br';	
-	                               
+	@charset 'UTF-8'; @language 'pt-br';		                               
 
      html { -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
