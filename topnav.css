@@ -1,0 +1,48 @@
+/* ================================================================================ */
+/* Topnav Menu Mobile / Responsive Top Navigation | <div class="#topnav"> */
+
+/* Add a black background color to the top navigation */
+/* Style the navigation menu */
+.div .topnav {
+   overflow: hidden;
+   background-color: #333;
+   position: relative;
+}
+
+/* Style navigation menu links */
+.div .topnav a {
+   color: white;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+   display: block;
+   float: left;
+}
+
+/* Change the color of links on hover */
+/* Add a grey background color on mouse-over */
+.div .topnav a:hover {
+   background-color: #ddd;
+   color: black;
+}
+
+/* Add a color to the active/current link / color: #4CAF50 verde medio claro */
+.div .topnav a:active {
+   background-color: #04AA6D;
+   color: white;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.div .topnav #myLinks {
+   display: none;
+}
+
+
+/* Style the hamburger menu */
+.div .topnav a.icon {
+   background: black;
+   display: block;
+   position: absolute;
+   right: 0;
+   top: 0;
+}
