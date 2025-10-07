@@ -1,0 +1,187 @@
+/* ====================================================================================== */
+/* BOOTSTRAP NAVBAR MENU / Style 2020
+Menu Toggler = Navbar-Toggle  
+Menu Collapse = Navbar-Collapse  
+Menu Horizontal = Navbar Expand  
+Menu Wrapper = Menu Centering the page 
+Menu Centralizar os títulos / class="justify-content-center" 
+Menu Horizontal / navbar-expand-md / display=inline 
+Add a black background color to the top navigation 
+Use CSS to customize the navigation bar: 	
+Navbar / Add a black background color to the top navigation 	
+Navbars vem com suporte integrado para um punhado de sub-componentes. 
+Escolha entre os seguintes, sempre que precisar: 
+.navbar-brand para o nome de seu projeto, produto ou companhia;
+.navbar-nav para obter uma leve navegação com suporte a dropdowns;
+.navbar-toggler para usar com plugin collapse e outros comportamentos;
+.form-inline para qualquer campo de formulário e ações;
+.navbar-text para adicionar texto centralizado verticalmente;
+.collapse .navbar-collapse para agrupar e esconder conteúdos navbar, 
+de acordo com o breakpoint do pai. 
+Navbars precisam de um .navbar com .navbar-expand{-sm|-md|-lg|-xl} (para responsividade) 
+e classes do esquema de cores. Navbars são responsivas por default. 
+Garanta acessibilidade com o elemento (nav) ou, se estiver usando um elemento mais 
+genérico como (div), coloque (role="navigation") em cada navbar para identificar 
+em tecnologias assistivas. 
+navbar-toggler collapse = faz a alternância, e recolhe a barra de navegação. 
+Muitas vezes, especialmente em telas pequenas, você deseja ocultar os links
+de navegação e substituí-los por um botão que deve revelá-los quando clicado. 
+Para criar uma barra de navegação dobrável, use um botão para navegação. 
+Em seguida, envolva o conteúdo da barra de navegação, com links dentro de um
+elemento DIV, seguido por um ID que corresponda ao botão: "target". 
+Exemplo: <div class="navbar-toggler", data-toggle="collapse", data-target=
+"#navbarcollapsetarget"> <div ID="#navbarcollapsetarget" class="collapse 
+navbar-collapse"> / Fim dos Comentários 
+/* ==================================================================================== */
+
+/* Header & Navigation */
+
+nav { 
+   display: inline-flex !important;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   position: fixed;
+   width: 100%;
+   height: var(--header-height);
+   background: var(--bg-primary);
+   color: #fff;
+   padding: auto auto auto auto;
+   box-sizing: content-box;
+   }
+      
+ .navbar {
+   background: #005aff;
+   color: #fff;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   z-index: 100;
+   top: 0;
+   height: var(--header-height);
+   transition: background-color 0.3s ease;
+   margin: 0 0 0 0;
+   padding: 15 15 15 15px;
+   display: inline-flex;
+   position: fixed;
+   list-style-type: none;
+   text-decoration: none;
+   align-items: center;
+   align-content: center;
+   text-align: center;
+}
+
+
+/* Menu Vertical = Navbar-Default  */
+ .navbar-default {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: normal;
+   font-weight: 500;
+   background: #005aff;
+   color: #fff;
+   line-height: 1.987654321;
+   letter-spacing: normal;
+   /* espaçamento entre letras */
+   word-spacing: normal;
+   /* espaçamento entre palavras */
+   white-space: normal;
+   /* espaços em branco */
+}
+
+
+ .navbar-inverse {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: medium;
+   font-weight: 500;
+   background: #000;
+   color: #fff;
+   line-height: 1.987654321;
+   letter-spacing: normal;
+   /* espaçamento entre letras */
+   word-spacing: normal;
+   /* espaçamento entre palavras */
+   white-space: normal;
+   /* espaços em branco */
+}
+
+
+ .navbar-expand-md {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: normal;
+   font-weight: bold;
+   background: #005aff;
+   color: #fff;
+   line-height: 1.987654321;
+   letter-spacing: normal;
+   /* espaçamento entre letras */
+   word-spacing: normal;
+   /* espaçamento entre palavras */
+   white-space: normal;
+   /* espaços em branco */
+}
+
+
+/* Menu Fixo=Navbar-Fixed */
+ .navbar-fixed {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: medium;
+   font-weight: 500;
+   color: darkblue;
+   line-height: 1.987654321;
+   letter-spacing: normal;
+   /* espaçamento entre letras */
+   word-spacing: normal;
+   /* espaçamento entre palavras */
+   white-space: normal;
+   /* espaços em branco */
+}
+
+.navbar-header {
+   display: inline !important;
+}
+
+.navbar-brand {
+   font-size: large;
+   color: darkviolet;
+}
+
+.navbar-left, .navbar-right {
+   display: inline !important;
+}
+
+
+/* use o .navbar-nav para obter uma leve navegação com suporte a dropdowns; */
+/* remove the bullets and the margins and padding from the list */
+
+.navbar-nav {
+   width: 100%;
+   display: inline !important;
+   position: relative;
+   text-align: left;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+   padding: auto;
+}
+
+/* O navbar-toggler collapse, faz a alternância e recolhe a barra de navegação 
+    Muitas vezes, especialmente em telas pequenas, você deseja ocultar os links 
+    de navegação e substituí-los por um botão que deve revelá-los quando clicado. 
+    Para criar uma barra de navegação dobrável, use um botão com ponto. 
+    Em seguida, envolva o conteúdo da barra de navegação (links) dentro de um 
+    elemento div, seguido por um id que corresponda ao do botão: "target".
+    class="navbar-toggler", data-toggle="collapse", data-target="#navbarCollapse" */
+
+.navbar-toggler, .toggler {
+   display: inline-block !important;
+}
+
+
+/* nav collapse navbar-collapse se usa para recolher a barra de navegação, para */
+/* agrupar e esconder conteúdos navbar, de acordo com o breakpoint do pai.  */
+/* collapse navbar-collapse / recolher barra de navegação */
+/* nav .collapse .navbar-collapse / class="collapse navbar-collapse" */
+
+.navbar-collapse, .collapse {
+   display: inline-block !important;
+}
+
